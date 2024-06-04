@@ -31,7 +31,7 @@ function App() {
   });
 
   useEffect(() => {
-    if (inputValue && selectedOption != "") {
+    if (inputValue && selectedOption !== "") {
       refetch();
     }
   }, [debouncedInputValue, selectedOption]);
